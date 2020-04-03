@@ -1,4 +1,8 @@
+[![Build Status](https://cloud.drone.io/api/badges/teryaev/drone-amazon-ssm/status.svg)](https://cloud.drone.io/teryaev/drone-amazon-ssm)
+
 A secret extension to Drone secrets extension for integration with AWS SSM Parameter store. _Please note this project requires Drone server version 1.4 or higher._
+
+Docker image -- https://hub.docker.com/r/reptiloid666/drone-amazon-ssm
 
 ## Installation
 
