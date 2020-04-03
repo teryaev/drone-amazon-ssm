@@ -11,7 +11,7 @@ steps:
   image: golang:1.14
   commands:
   - go test ./...
-  - go build -o drone-amazon-ssms
+  - go build -o drone-amazon-ssm
   environment:
     CGO_ENABLED: 0
 
