@@ -1,0 +1,26 @@
+kind: pipeline
+type: docker
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: test & build
+  image: golang:1.14
+  commands:
+  - go test ./...
+  - go build -o drone-amazon-ssms
+  environment:
+    CGO_ENABLED: 0
+
+- name: publish
+  image: plugins/docker
+  settings:
+    auto_tag: true
+    repo: reptiloid666/drone-amazon-ssm
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password

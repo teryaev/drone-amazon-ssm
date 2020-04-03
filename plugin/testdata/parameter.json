@@ -1,0 +1,10 @@
+{
+    "Parameter": {
+        "Name": "/staging/webapp/DATABASE_URL",
+        "Type": "String",
+        "Value": "mysql://fakedburl",
+        "Version": 1,
+        "LastModifiedDate": 1574431231.197,
+        "ARN": "arn:aws:ssm:us-east-1:012345678901:parameter/staging/webapp/DATABASE_URL"
+    }
+}
